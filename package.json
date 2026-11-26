@@ -1,22 +1,25 @@
 {
-  "name": "adadoc-gestao-alunos",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "npm run dev --workspace server",
-    "start": "npm run start --workspace server",
-    "client": "npm start --prefix client"
-  },
-  "workspaces": [
-    "server"
-  ],
   "dependencies": {
-    "@angular/cli": "^22.3.0",
+    "@angular/core": "^22.3.0",
     "angular": "^1.8.3",
-    "express": "^5.3.0",
-    "yarn": "^1.22.22"
+    "mysql2": "^3.24.6",
+    "npm": "^12.2.3"
   },
-  "allowScripts": {
-    "yarn@1.22.22": true
-  }
+  "name": "adad-with-ia",
+  "version": "1.0.0",
+  "description": "Sistema para cadastro de alunos, lançamento de notas e controle de chamadas. O frontend usa Angular; a API usa Express.js e o banco de dados é MySQL.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eliabe-Ribeiro-22/ADAD-with-IA.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Eliabe-Ribeiro-22/ADAD-with-IA/issues"
+  },
+  "homepage": "https://github.com/Eliabe-Ribeiro-22/ADAD-with-IA#readme"
 }

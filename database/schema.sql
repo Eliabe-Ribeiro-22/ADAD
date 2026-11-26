@@ -38,9 +38,13 @@ CREATE TABLE IF NOT EXISTS chamadas (
   data_chamada DATE NOT NULL,
   faixa_etaria_alunos VARCHAR(60) NOT NULL,
   divisa_chamada VARCHAR(100) NOT NULL,
+  aluno_id INT UNSIGNED NOT NULL,
   professor VARCHAR(150) NOT NULL,
   criado_em TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (id),
+  CONSTRAINT fk_chamadas_alunos
+    FOREIGN KEY (aluno_id) REFERENCES alunos (id)
+    ON DELETE CASCADE,
   INDEX idx_chamadas_data (data_chamada)
 ) ENGINE=InnoDB;
 
